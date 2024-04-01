@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Apply</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div id = "container">
+        
+        <header>Apply your pet</header>
+        
+        <nav>
+            <ul class="first-ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pet_adoption.html">Pet Adoption</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+            </ul>
+        </nav> 
+        <main>
+            <h1>How to Adopt?</h1>
+            <p class="apply-p">Please fill in your personal information and the pet you want to adopt according to the form below, we will contact you within 24-48 hours after receipt</p>
+            <h2>Fill Out This Form</h2>
+            <form action="/apply" method="post">
+                <fieldset>
+                    <legend>Apply Form</legend>
+                    <label>Enter Your fullname</label><br>
+                    <input type="text" name = "full_name"><br>
+                    <label>Enter Your email address</label><br>
+                    <input type="email" name="email"><br>
+                    <label>Enter Your phone number</label><br>
+                    <input type="text" name="phone"><br>
+                    <label>How should we contact you?</label><br>
+                    <input type="radio" name="email" value="email">Email<br>
+                    <input type="radio" name="phone" value="phone">Phone<br>
+                    <label>What kind of pet do you prefer?</label><br>
+                    <select name="pet">
+                        <option>Dog</option>
+                        <option>Cat</option>
+                    </select><br>
+                    <label>Please provide your prefer pet name and reason</label><br>
+                    <textarea rows="2" columns="40" ></textarea><br>
+                    <input type="submit" value="submit"></input><br>
+                </fieldset>
+            </form></main>
+        <footer>&copy; Copyright 2023</footer>
+    </div>
+
+</body>
+</html>

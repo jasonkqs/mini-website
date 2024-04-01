@@ -1,0 +1,288 @@
+header{
+    font-size: large;
+    text-align: center;
+    color: brown;
+    background-color: aqua;
+}
+
+p{
+    background-color: lightgreen;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.index-p {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.apply-p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+h1 {
+    font-family: Arial;
+}
+
+nav {
+    background-color: rgb(234, 89, 41);
+    height: 20px;
+}
+
+ul {
+    text-align: center;
+}
+
+li a{
+    text-decoration: none; 
+}
+li a:link {
+    color: #000; 
+}
+li a:visited {
+    color: #818db3; 
+}
+li a:hover {
+    columns: #333; 
+}
+li a:active {
+    color: #753a30; 
+}
+
+p a:link {
+    color:orange;
+}
+
+p a:hover {
+    color:#753a30;
+}
+
+.website-info {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+.first-ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.slider {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.3s;
+  }
+
+  .checked-radio{
+    text-align: center;
+  }
+  
+  .slide {
+    min-width: 300px;
+    width: 300px;      
+    height: 200px;     
+    overflow: hidden;
+  }
+
+  .slide img {
+    width: 100%;          
+    height: 100%;         
+    object-fit: cover;    
+    display: block;       
+  }
+  
+  
+  #slide1:checked ~ .slides {
+    transform: translateX(0);
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-300px);
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-600px);
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  .nav-item {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #slide1:checked ~ .nav > label:nth-child(1),
+  #slide2:checked ~ .nav > label:nth-child(2),
+  #slide3:checked ~ .nav > label:nth-child(3) {
+    background: white;
+  }
+
+  caption{
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 40px;
+    padding-top: 15px;
+    color:#753a30;
+}
+
+table {
+    margin-top: 35px;
+}
+
+table, caption, th, td {
+    border:1px solid #000;
+}
+
+th, td{
+    width: 90px;
+    height: 80px;
+    text-align: center;
+}
+  
+  input{
+    width: 300px;
+}
+input[type="radio"]{
+    width: 25px;
+}
+
+textarea{
+    width: 300px;
+}
+
+  input[type="submit"]{
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+}
+
+footer {
+    height: 20px;
+    background-color: rgb(217, 225, 97);
+    text-align: center;
+    padding-top: 10px;
+    color:rgb(15, 43, 134);
+}
+
+#gallary{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#gallary img {
+  width: 200px;
+  height: 200px;;
+}
+
+#gallary .photo figure {
+  text-align: center;
+}
+
+#gallary .photo figcaption {
+  margin-top: 5px; 
+}
+
+.photo li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+.img-description {
+  display: none;
+  position: absolute;
+  bottom: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0,0,0,0.7); 
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#gallary .photo figure {
+  position: relative; 
+}
+
+#gallary .photo figure:hover .img-description {
+  display: block;
+  font-size: small;
+  text-align: center;
+}
+
+#gallary .photo figure:hover img{
+  opacity: 0.5;
+}
+
+.photo figure:hover {
+  cursor: pointer;
+}
+
+#infoBox {
+  width: 300px;
+  border-radius: 8px;
+}
+
+#closeInfoBox {
+  color: blue;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#caption {
+  color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
